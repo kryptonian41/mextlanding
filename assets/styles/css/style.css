@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,700,700i,900|Raleway:100,200,300,400,500,600,700,800,900");
+html {
+  font-size: 10px; }
+
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  font-family: Raleway;
+  position: relative;
+  color: white;
+  line-height: 1.6; }
+
+.landing {
+  min-height: 100vh;
+  background: linear-gradient(to top, rgba(31, 30, 28, 0.7), rgba(31, 30, 28, 0.7)), url("../../images/lnading-image.jpg");
+  background-size: cover;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start; }
+  .landing > div {
+    flex: 1; }
+  .landing__content > h1 {
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 2rem; }
+  .landing__content > p {
+    font-size: 3rem; }
+  .landing__logo {
+    text-align: center; }
+    .landing__logo > img {
+      width: 75%;
+      display: inline-block; }
+
+.cus-navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #444; }
+  .cus-navbar--logo {
+    text-align: center; }
+    .cus-navbar--logo > img {
+      display: inline-block;
+      width: 120px;
+      transition: width 0.3s ease-out;
+      margin-top: 1rem; }
+  .cus-navbar--links > ul {
+    text-align: center;
+    display: block; }
+    .cus-navbar--links > ul > li {
+      background: transparent;
+      display: inline-block; }
+      .cus-navbar--links > ul > li > a {
+        color: white;
+        padding: 1rem;
+        font-size: 1.8rem;
+        text-decoration: none;
+        display: block; }
+
+.guide {
+  padding: 5rem;
+  padding-bottom: 0;
+  display: flex;
+  background: #313131;
+  text-align: center;
+  flex-wrap: wrap; }
+  .guide > h1 {
+    flex-basis: 100%;
+    font-size: 2.5rem;
+    font-weight: 500; }
+  .guide__card {
+    flex: 1;
+    background: #4e4e4e;
+    margin: 2rem;
+    margin-bottom: -2rem;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 12px 6px -9px #555;
+    text-align: center; }
+    .guide__card--vector {
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 2rem; }
+    .guide__card > p {
+      font-size: 1.8rem;
+      text-align: center; }
+
+.faq-carousel {
+  font-size: 1.8rem;
+  background: #222;
+  padding: 7rem; }
+  .faq-carousel__card {
+    background: #444;
+    padding: 2rem;
+    font-size: 1.8rem; }
+    .faq-carousel__card > p {
+      text-align: center; }
+
+.features {
+  background: #ebebeb; }
+  .features__section {
+    width: 100%;
+    padding: 4rem;
+    color: black;
+    content: "";
+    display: table;
+    clear: both; }
+    .features__section--left, .features__section--right {
+      width: 50%;
+      padding: 3rem; }
+      .features__section--left h1, .features__section--right h1 {
+        font-family: Raleway;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        font-size: 2.8rem; }
+      .features__section--left p, .features__section--right p {
+        font-size: 1.8rem;
+        font-weight: 400; }
+    .features__section--left {
+      float: left; }
+    .features__section--right {
+      float: right; }
+
+@media (max-width: 696px) {
+  html {
+    font-size: 8px; }
+
+  .landing {
+    flex-direction: column; }
+    .landing__logo > img {
+      width: 50%; }
+
+  .features__section--left, .features__section--right {
+    width: 100%; }
+
+  .guide {
+    padding-bottom: 5rem;
+    flex-direction: column; }
+    .guide__card {
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 6px -6px #222; } }
+
+/*# sourceMappingURL=style.css.map */
