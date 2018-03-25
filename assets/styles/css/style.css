@@ -68,7 +68,7 @@ body {
 .guide {
   padding: 5rem;
   display: flex;
-  background: #313131;
+  background: #222;
   text-align: center;
   flex-wrap: wrap; }
   .guide > h1 {
@@ -77,13 +77,15 @@ body {
     font-weight: 500; }
   .guide__card {
     flex: 1;
-    background: #313131;
     margin: 2rem;
     padding: 2rem;
     text-align: center; }
     .guide__card--vector {
       display: inline-block;
       width: 50%;
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: 4rem;
       margin-bottom: 2rem; }
     .guide__card > p {
       font-size: 1.8rem;
@@ -124,6 +126,21 @@ body {
       float: left; }
     .features__section--right {
       float: right; }
+
+.aboutus {
+  color: black;
+  padding: 4rem;
+  background: #ebebeb; }
+  .aboutus > h1 {
+    font-size: 6.5rem;
+    text-align: center;
+    width: 50%; }
+  .aboutus > p {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 50%; }
+  .aboutus > h1, .aboutus p {
+    margin: 0 auto; }
 
 @media (max-width: 696px) {
   html {
