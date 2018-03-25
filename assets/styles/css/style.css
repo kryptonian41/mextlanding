@@ -102,6 +102,12 @@ body {
     .faq-carousel__card > p {
       text-align: center; }
 
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+  font-size: 3rem; }
+  .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
+    color: #666;
+    background: transparent; }
+
 .features {
   background: #ebebeb; }
   .features__section {
