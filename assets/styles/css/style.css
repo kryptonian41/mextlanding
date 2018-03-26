@@ -49,7 +49,7 @@ body {
     text-align: center; }
     .cus-navbar--logo > img {
       display: inline-block;
-      width: 120px;
+      width: 100px;
       transition: width 0.3s ease-out;
       margin-top: 1rem; }
   .cus-navbar--links > ul {
@@ -57,7 +57,8 @@ body {
     display: block; }
     .cus-navbar--links > ul > li {
       background: transparent;
-      display: inline-block; }
+      display: inline-block;
+      margin-left: 2rem; }
       .cus-navbar--links > ul > li > a {
         color: white;
         padding: 1rem;
@@ -94,7 +95,8 @@ body {
 .faq-carousel {
   font-size: 1.8rem;
   background: #222;
-  padding: 7rem; }
+  padding: 7rem;
+  border: none; }
   .faq-carousel__card {
     background: #444;
     padding: 2rem;
@@ -137,16 +139,82 @@ body {
   color: black;
   padding: 4rem;
   background: #ebebeb; }
+  .aboutus > h1, .aboutus p {
+    margin: 0 auto; }
   .aboutus > h1 {
     font-size: 6.5rem;
     text-align: center;
-    width: 50%; }
+    width: 50%;
+    margin-bottom: 2rem; }
   .aboutus > p {
     font-size: 2.5rem;
     text-align: center;
-    width: 50%; }
-  .aboutus > h1, .aboutus p {
-    margin: 0 auto; }
+    width: 50%;
+    margin-bottom: 3rem; }
+
+.contactus {
+  background: #ebebeb;
+  display: flex; }
+  .contactus--form {
+    padding: 4rem;
+    order: 2;
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contactus--form > form {
+      width: 80%; }
+    .contactus--form input:not(.cbtn) {
+      display: block;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      font-size: 1.6rem;
+      width: 100%;
+      background: transparent;
+      outline: none;
+      border: none;
+      color: #444;
+      border-bottom: 2px solid #444;
+      transition: border-color 0.3s ease-out;
+      font-family: Raleway; }
+      .contactus--form input:not(.cbtn):focus {
+        border-color: #222; }
+      .contactus--form input:not(.cbtn)::placeholder {
+        font-family: Raleway; }
+    .contactus--form .cbtn {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      font-size: 2rem;
+      outline: none;
+      border: 4px solid #444;
+      color: #444;
+      font-weight: 700;
+      background: transparent;
+      font-family: Raleway;
+      cursor: pointer;
+      transition: border-color 0.2s ease-in; }
+      .contactus--form .cbtn > span {
+        transition: transform 0.3s cubic-bezier(0.89, -0.62, 0.15, 1.64);
+        display: block; }
+      .contactus--form .cbtn:hover {
+        border-color: #222;
+        color: #222; }
+        .contactus--form .cbtn:hover > span {
+          transform: rotate(35deg); }
+  .contactus--decor {
+    order: 1;
+    flex-basis: 60%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%); }
+    .contactus--decor > h1 {
+      font-size: 5rem;
+      font-weight: 500; }
 
 @media (max-width: 696px) {
   html {
@@ -165,6 +233,17 @@ body {
     flex-direction: column; }
     .guide__card {
       margin-bottom: 2rem;
-      box-shadow: 0 10px 6px -6px #222; } }
+      box-shadow: 0 10px 6px -6px #222; }
+
+  .contactus {
+    flex-direction: column; }
+    .contactus--decor {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
+      padding: 9rem; }
+
+  .aboutus > h1 {
+    width: 80%; }
+  .aboutus > p {
+    width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */

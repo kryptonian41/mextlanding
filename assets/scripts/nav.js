@@ -5,7 +5,7 @@ function shrinkLogo() {
 }
 
 function expandLogo() {
-  logo.css("width", "120px");
+  logo.css("width", "100px");
 }
 
 $(document).ready(function() {
